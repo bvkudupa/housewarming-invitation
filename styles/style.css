@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Lora', serif;
+}
+
+.invitation-wrapper {
+    background-image: url('../assets/images/housewarming.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 450px; 
+    aspect-ratio: 9 / 15; /* Adjusted to fit the floral border better */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.content-area {
+    margin-top: 18%; /* Starts below the top yellow garlands */
+    width: 85%;
+    text-align: center;
+}
+
+.ganesha-img {
+    width: 40px;
+    margin-bottom: 15px;
+}
+
+.mantra {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.host-names {
+    color: #b35900;
+    font-family: 'Cinzel', serif;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.invite-msg {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #555;
+    margin-bottom: 12px;
+    padding: 0 10px;
+}
+
+.main-title {
+    font-family: 'Cinzel', serif;
+    color: #b35900;
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.primary-date {
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #222;
+}
+
+.primary-time {
+    font-size: 0.7rem;
+    margin-bottom: 15px;
+}
+
+/* Side-by-Side Layout */
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.lunch-highlight {
+    text-align: left;
+}
+
+.lunch-highlight .label {
+    color: #b35900;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 0.8rem;
+}
+
+.lunch-highlight p {
+    font-size: 0.65rem;
+    line-height: 1.4;
+}
+
+.qr-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #ddd;
+    background: white;
+    padding: 2px;
+}
+
+.qr-label {
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin-top: 3px;
+    letter-spacing: 1px;
+}
+
+.address-box {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    line-height: 1.4;
+    color: #333;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .invitation-wrapper {
+        max-width: 100vw;
+        height: 100vh;
+        aspect-ratio: auto;
+    }
+    .content-area {
+        margin-top: 20%;
+    }
+}
